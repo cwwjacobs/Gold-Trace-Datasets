@@ -1,0 +1,403 @@
+{
+  "checkpoints": [
+    {
+      "created_at": "2026-08-15T12:00:00Z",
+      "event_id": "afr_event_ff60824dfdacac4b21473d73",
+      "event_seq": 10,
+      "id": "afr_checkpoint_53864a53d875c43a525df91a",
+      "label": "seedrunner.completed",
+      "run_id": "mock-demo",
+      "state": {
+        "seedrunner": {
+          "artifacts": {
+            "html_report": "report.html",
+            "manifest": "manifest.json",
+            "records": "records.jsonl",
+            "summary": "summary.json"
+          },
+          "cost": {
+            "actual_usd": 0.0,
+            "estimated_usd": 0.0
+          },
+          "record_count": 3,
+          "run_id": "mock-demo",
+          "status_counts": {
+            "ERROR": 1,
+            "FAIL": 1,
+            "PASS": 1
+          },
+          "tier_counts": {
+            "Bronze": 1,
+            "Gold": 0,
+            "Silver": 2
+          }
+        }
+      }
+    }
+  ],
+  "events": [
+    {
+      "created_at": "2026-08-15T12:00:00Z",
+      "event_type": "log",
+      "id": "afr_event_fca7ccdbc75653ca95123e32",
+      "name": "seedrunner.run.started",
+      "payload": {
+        "data": {
+          "seed_count": 3,
+          "seed_snapshot_path": "inputs/seeds.jsonl"
+        },
+        "level": "info",
+        "message": "SeedRunner run started"
+      },
+      "run_id": "mock-demo",
+      "seq": 1
+    },
+    {
+      "created_at": "2026-08-15T12:00:00Z",
+      "event_type": "state_snapshot",
+      "id": "afr_event_6093399ebe5948deb5f51816",
+      "name": "seedrunner.configuration",
+      "payload": {
+        "mode": "replace",
+        "state": {
+          "generator": {
+            "deterministic": true,
+            "monetary_cost_usd": 0.0,
+            "network": false,
+            "provider": "mock"
+          },
+          "max_run_cost_usd": 12.0,
+          "seed_snapshot_path": "inputs/seeds.jsonl"
+        }
+      },
+      "run_id": "mock-demo",
+      "seq": 2
+    },
+    {
+      "created_at": "2026-08-15T12:00:00Z",
+      "event_type": "model_call",
+      "id": "afr_event_70d170d576df15812a35c425",
+      "name": "generator.mock",
+      "payload": {
+        "cost": {
+          "actual_usd": 0.0,
+          "estimated_usd": 0.0,
+          "preflight_estimated_usd": 0.0
+        },
+        "duration_ms": 0.0,
+        "input": {
+          "artifact_path": "prompts/prompt_cf9ece8c625a9e302311b722.json",
+          "prompt_id": "prompt_cf9ece8c625a9e302311b722"
+        },
+        "model": null,
+        "output": {
+          "candidate_id": "candidate_9c16ae69ec319f0daa9c83ae",
+          "candidate_path": "candidates/candidate_9c16ae69ec319f0daa9c83ae.json",
+          "raw_response_id": "raw_9767ed3a091fe22ec8c0345b",
+          "raw_response_path": "raw_responses/raw_9767ed3a091fe22ec8c0345b.json"
+        },
+        "provider": "mock",
+        "status": "completed"
+      },
+      "run_id": "mock-demo",
+      "seq": 3
+    },
+    {
+      "created_at": "2026-08-15T12:00:00Z",
+      "event_type": "tool_call",
+      "id": "afr_event_11340138c1f243bb3cfabd37",
+      "name": "oracle.exact_match",
+      "payload": {
+        "args": {
+          "candidate_id": "candidate_9c16ae69ec319f0daa9c83ae",
+          "configuration_record_path": "records.jsonl"
+        },
+        "duration_ms": 0.0,
+        "error": null,
+        "result": {
+          "evidence_path": "evidence/evidence_a149cb5b6d8662f7d972abe8.json",
+          "oracle_result_id": "oracle_ecb6740bd31620e9136d7719",
+          "oracle_result_path": "oracle_results/oracle_ecb6740bd31620e9136d7719.json",
+          "semantic_status": "PASS",
+          "summary": "candidate exactly matched expected output"
+        },
+        "status": "completed",
+        "tool": "oracle.exact_match"
+      },
+      "run_id": "mock-demo",
+      "seq": 4
+    },
+    {
+      "created_at": "2026-08-15T12:00:00Z",
+      "event_type": "model_call",
+      "id": "afr_event_1f7a5babcbdffad7a281bb74",
+      "name": "generator.mock",
+      "payload": {
+        "cost": {
+          "actual_usd": 0.0,
+          "estimated_usd": 0.0,
+          "preflight_estimated_usd": 0.0
+        },
+        "duration_ms": 0.0,
+        "input": {
+          "artifact_path": "prompts/prompt_bd09e57d73365fd619607e41.json",
+          "prompt_id": "prompt_bd09e57d73365fd619607e41"
+        },
+        "model": null,
+        "output": {
+          "candidate_id": "candidate_0494f3d99efebdb7013406cc",
+          "candidate_path": "candidates/candidate_0494f3d99efebdb7013406cc.json",
+          "raw_response_id": "raw_d3abf500842a834ab15dd669",
+          "raw_response_path": "raw_responses/raw_d3abf500842a834ab15dd669.json"
+        },
+        "provider": "mock",
+        "status": "completed"
+      },
+      "run_id": "mock-demo",
+      "seq": 5
+    },
+    {
+      "created_at": "2026-08-15T12:00:00Z",
+      "event_type": "tool_call",
+      "id": "afr_event_6bc4b2363620552328d1999f",
+      "name": "oracle.exact_match",
+      "payload": {
+        "args": {
+          "candidate_id": "candidate_0494f3d99efebdb7013406cc",
+          "configuration_record_path": "records.jsonl"
+        },
+        "duration_ms": 0.0,
+        "error": null,
+        "result": {
+          "evidence_path": "evidence/evidence_c1597e4cb9b5efe0ab54dcbe.json",
+          "oracle_result_id": "oracle_e4781e1c2b6b310b46e4e700",
+          "oracle_result_path": "oracle_results/oracle_e4781e1c2b6b310b46e4e700.json",
+          "semantic_status": "FAIL",
+          "summary": "candidate did not exactly match expected output"
+        },
+        "status": "completed",
+        "tool": "oracle.exact_match"
+      },
+      "run_id": "mock-demo",
+      "seq": 6
+    },
+    {
+      "created_at": "2026-08-15T12:00:00Z",
+      "event_type": "model_call",
+      "id": "afr_event_12044b832749f7c7749630b5",
+      "name": "generator.mock",
+      "payload": {
+        "cost": {
+          "actual_usd": 0.0,
+          "estimated_usd": 0.0,
+          "preflight_estimated_usd": 0.0
+        },
+        "duration_ms": 0.0,
+        "input": {
+          "artifact_path": "prompts/prompt_142103611ba96c3a3b513337.json",
+          "prompt_id": "prompt_142103611ba96c3a3b513337"
+        },
+        "model": null,
+        "output": {
+          "candidate_id": "candidate_e79fd9869cf8fe036cb0d74b",
+          "candidate_path": "candidates/candidate_e79fd9869cf8fe036cb0d74b.json",
+          "raw_response_id": "raw_62adae73df07d8879d0ee8c9",
+          "raw_response_path": "raw_responses/raw_62adae73df07d8879d0ee8c9.json"
+        },
+        "provider": "mock",
+        "status": "completed"
+      },
+      "run_id": "mock-demo",
+      "seq": 7
+    },
+    {
+      "created_at": "2026-08-15T12:00:00Z",
+      "event_type": "tool_call",
+      "id": "afr_event_fdb2aacd16ddd63b2c32dc3f",
+      "name": "oracle.python_tests",
+      "payload": {
+        "args": {
+          "candidate_id": "candidate_e79fd9869cf8fe036cb0d74b",
+          "configuration_record_path": "records.jsonl"
+        },
+        "duration_ms": 0.0,
+        "error": {
+          "details_path": "oracle_results/oracle_ffed7ae1be98f75535ceb2d3.json",
+          "message": "Python verifier could not establish PASS or FAIL"
+        },
+        "result": {
+          "evidence_path": "evidence/evidence_2f8ae466464b971ffd412691.json",
+          "oracle_result_id": "oracle_ffed7ae1be98f75535ceb2d3",
+          "oracle_result_path": "oracle_results/oracle_ffed7ae1be98f75535ceb2d3.json",
+          "semantic_status": "ERROR",
+          "summary": "Python verifier could not establish PASS or FAIL"
+        },
+        "status": "error",
+        "tool": "oracle.python_tests"
+      },
+      "run_id": "mock-demo",
+      "seq": 8
+    },
+    {
+      "created_at": "2026-08-15T12:00:00Z",
+      "event_type": "state_snapshot",
+      "id": "afr_event_da55adef52f3df39c5802412",
+      "name": "seedrunner.final_summary",
+      "payload": {
+        "mode": "replace",
+        "state": {
+          "seedrunner": {
+            "artifacts": {
+              "html_report": "report.html",
+              "manifest": "manifest.json",
+              "records": "records.jsonl",
+              "summary": "summary.json"
+            },
+            "cost": {
+              "actual_usd": 0.0,
+              "estimated_usd": 0.0
+            },
+            "record_count": 3,
+            "run_id": "mock-demo",
+            "status_counts": {
+              "ERROR": 1,
+              "FAIL": 1,
+              "PASS": 1
+            },
+            "tier_counts": {
+              "Bronze": 1,
+              "Gold": 0,
+              "Silver": 2
+            }
+          }
+        }
+      },
+      "run_id": "mock-demo",
+      "seq": 9
+    },
+    {
+      "created_at": "2026-08-15T12:00:00Z",
+      "event_type": "checkpoint",
+      "id": "afr_event_ff60824dfdacac4b21473d73",
+      "name": "seedrunner.completed",
+      "payload": {
+        "checkpoint_id": "afr_checkpoint_53864a53d875c43a525df91a",
+        "label": "seedrunner.completed"
+      },
+      "run_id": "mock-demo",
+      "seq": 10
+    },
+    {
+      "created_at": "2026-08-15T12:00:00Z",
+      "event_type": "log",
+      "id": "afr_event_b7536df73f78a0e3393b9f24",
+      "name": "seedrunner.run.completed",
+      "payload": {
+        "data": {
+          "actual_cost_usd": 0.0,
+          "status_counts": {
+            "ERROR": 1,
+            "FAIL": 1,
+            "PASS": 1
+          }
+        },
+        "level": "info",
+        "message": "SeedRunner run completed"
+      },
+      "run_id": "mock-demo",
+      "seq": 11
+    }
+  ],
+  "format": "afr.export.v1",
+  "run": {
+    "created_at": "2026-08-15T12:00:00Z",
+    "ended_at": "2026-08-15T12:00:00Z",
+    "fork_checkpoint_id": null,
+    "id": "mock-demo",
+    "metadata": {
+      "capture_boundary": {
+        "not_claimed": [
+          "hidden model reasoning, intent, or neural state",
+          "unrecorded process, browser, network, or external-world state",
+          "passive capture of LM Studio internals",
+          "semantic oracle authority by AFR",
+          "sandboxing of Python verifier code"
+        ],
+        "recorded": [
+          "declared input seed snapshot",
+          "prompt and generator boundary references",
+          "raw-response and candidate artifact references",
+          "oracle procedure result and evidence references",
+          "final recorded summary state"
+        ],
+        "redaction": "No automatic privacy or secret-redaction guarantee is claimed by this receipt."
+      },
+      "contract_source": {
+        "export_format": "afr.export.v1",
+        "reference_paths": [
+          "sdk/afr/client.py",
+          "docs/data-model.md",
+          "docs/claim-contract.md"
+        ],
+        "repository": "cwwjacobs/agent-flight-recorder",
+        "revision": "f25037f3941e1c76b6725c0d7999106a270af231"
+      },
+      "cost": {
+        "actual_usd": 0.0,
+        "estimated_usd": 0.0
+      },
+      "generator": {
+        "deterministic": true,
+        "monetary_cost_usd": 0.0,
+        "network": false,
+        "provider": "mock"
+      },
+      "outputs": {
+        "html_report": "report.html",
+        "manifest": "manifest.json",
+        "records": "records.jsonl",
+        "summary": "summary.json"
+      },
+      "producer": {
+        "name": "SeedRunner",
+        "schema_version": "seedrunner.run.v0"
+      },
+      "seed_snapshot_path": "inputs/seeds.jsonl",
+      "spec_assurance": {
+        "implementation_rule": "Visible prompt requirements and the pinned AFR repository contract are enforced without silently inventing missing bundle content.",
+        "resolved": {
+          "afr_contract": {
+            "export_format": "afr.export.v1",
+            "repository": "cwwjacobs/agent-flight-recorder",
+            "revision": "f25037f3941e1c76b6725c0d7999106a270af231"
+          }
+        },
+        "status": "PARTIAL",
+        "unresolved": [
+          "The controlling prompt references separate seed schemas, examples, and a binding docs/PROTOTYPE_ACCEPTANCE_TESTS.md bundle that was not supplied or located."
+        ]
+      },
+      "summary": {
+        "record_count": 3,
+        "status_counts": {
+          "ERROR": 1,
+          "FAIL": 1,
+          "PASS": 1
+        },
+        "tier_counts": {
+          "Bronze": 1,
+          "Gold": 0,
+          "Silver": 2
+        }
+      }
+    },
+    "name": "SeedRunner",
+    "notes": "Portable observable-boundary receipt; artifact contents are stored separately in the run directory.",
+    "parent_run_id": null,
+    "status": "completed",
+    "tags": [
+      "seedrunner",
+      "dataset-foundry"
+    ]
+  }
+}

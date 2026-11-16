@@ -1,0 +1,7 @@
+{
+  "candidate_id": "candidate_e79fd9869cf8fe036cb0d74b",
+  "content": "def add(a, b):\n    return a + b\n",
+  "media_type": "text/plain; charset=utf-8",
+  "raw_response_id": "raw_62adae73df07d8879d0ee8c9",
+  "schema_version": "seedrunner.candidate.v0"
+}

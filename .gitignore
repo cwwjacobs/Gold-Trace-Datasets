@@ -1,0 +1,38 @@
+# local secrets
+.env
+.env.*
+!.env.example
+
+# raw/generated evidence and product artifacts
+studio/state/
+studio/packs/
+datasets/
+seedrunner/runs/
+runs/
+
+# vendored third-party checkouts (pulled by scripts/pull_harness.sh, never committed)
+vendor/
+
+# local archives / exports
+*.tar.gz
+*.zip
+
+# Python/build caches
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.coverage
+htmlcov/
+build/
+dist/
+
+# local/editor/OS metadata
+.directory
+.DS_Store
+*.swp
+*.swo
+
+# local virtualenvs
+.venv/
+venv/

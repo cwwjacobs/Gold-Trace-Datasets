@@ -1,0 +1,27 @@
+{
+  "afr_receipt": {
+    "errors": [],
+    "status": "PASS"
+  },
+  "errors": [],
+  "fail_records_retained": 1,
+  "gold_promotion": {
+    "performed": false,
+    "reason": "verify-run validates evidence and integrity but does not silently mutate dataset records"
+  },
+  "integrity": {
+    "errors": [],
+    "files_checked": 21,
+    "root_hash": "0f0bfcbbd06b36b4ca5a4e7efe119ebb1eebf7e68598ec2bc4e992fb6c45622f",
+    "status": "PASS"
+  },
+  "records_checked": 3,
+  "schema_version": "seedrunner.verification.v0",
+  "status": "PASS",
+  "status_counts": {
+    "ERROR": 1,
+    "FAIL": 1,
+    "PASS": 1
+  },
+  "verified_at": "2026-08-25T03:28:36.512696Z"
+}

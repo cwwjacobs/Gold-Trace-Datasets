@@ -1,0 +1,9 @@
+{
+  "prompt": "Write a function named add.",
+  "prompt_id": "prompt_142103611ba96c3a3b513337",
+  "schema_version": "seedrunner.prompt.v0",
+  "seed": {
+    "id": "intentional-error",
+    "version": "1"
+  }
+}

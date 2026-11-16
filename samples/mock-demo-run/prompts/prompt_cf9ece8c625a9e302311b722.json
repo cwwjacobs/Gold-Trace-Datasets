@@ -1,0 +1,9 @@
+{
+  "prompt": "Return the numeral four.",
+  "prompt_id": "prompt_cf9ece8c625a9e302311b722",
+  "schema_version": "seedrunner.prompt.v0",
+  "seed": {
+    "id": "intentional-pass",
+    "version": "1"
+  }
+}

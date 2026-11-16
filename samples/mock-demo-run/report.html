@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SeedRunner report — mock-demo</title>
+  <style>
+    :root { color-scheme: light dark; font-family: ui-sans-serif, system-ui, sans-serif; }
+    body { max-width: 72rem; margin: 0 auto; padding: 2rem; line-height: 1.45; }
+    .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr)); gap: 1rem; }
+    .card { border: 1px solid #8886; border-radius: .75rem; padding: 1rem; }
+    table { width: 100%; border-collapse: collapse; margin-top: 1.5rem; }
+    th, td { border-bottom: 1px solid #8886; padding: .65rem; text-align: left; vertical-align: top; }
+    code { overflow-wrap: anywhere; }
+  </style>
+</head>
+<body>
+  <h1>SeedRunner run mock-demo</h1>
+  <div class="cards">
+    <div class="card"><strong>Records</strong><div>3</div></div>
+    <div class="card"><strong>PASS</strong><div>1</div></div>
+    <div class="card"><strong>FAIL</strong><div>1</div></div>
+    <div class="card"><strong>ERROR</strong><div>1</div></div>
+    <div class="card"><strong>Actual cost</strong><div>$0.000000</div></div>
+  </div>
+  <table>
+    <thead><tr><th>Seed</th><th>Oracle</th><th>Tier</th><th>Evidence summary</th></tr></thead>
+    <tbody><tr><td><code>intentional-pass</code></td><td>PASS</td><td>Silver</td><td>candidate exactly matched expected output</td></tr><tr><td><code>intentional-fail</code></td><td>FAIL</td><td>Silver</td><td>candidate did not exactly match expected output</td></tr><tr><td><code>intentional-error</code></td><td>ERROR</td><td>Bronze</td><td>Python verifier could not establish PASS or FAIL</td></tr></tbody>
+  </table>
+  <script type="application/json" id="seedrunner-summary">{"cost": {"actual_usd": 0.0, "estimated_usd": 0.0}, "cost_guardrail": {"blocked_count": 0, "max_run_cost_usd": 12.0, "stopped": false, "submitted_count": 3}, "record_count": 3, "records": [{"record_id": "record_578ed6570b0b10031f5ac168", "seed_id": "intentional-pass", "status": "PASS", "summary": "candidate exactly matched expected output", "tier": "Silver"}, {"record_id": "record_7b60d2c4e69e95cd96d3b258", "seed_id": "intentional-fail", "status": "FAIL", "summary": "candidate did not exactly match expected output", "tier": "Silver"}, {"record_id": "record_28190117346fd4e085e80a3c", "seed_id": "intentional-error", "status": "ERROR", "summary": "Python verifier could not establish PASS or FAIL", "tier": "Bronze"}], "run_id": "mock-demo", "schema_version": "seedrunner.summary.v0", "status_counts": {"ERROR": 1, "FAIL": 1, "PASS": 1}, "tier_counts": {"Bronze": 1, "Gold": 0, "Silver": 2}}</script>
+</body>
+</html>

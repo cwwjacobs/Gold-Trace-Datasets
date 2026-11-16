@@ -1,0 +1,9 @@
+{
+  "prompt": "Return blue.",
+  "prompt_id": "prompt_bd09e57d73365fd619607e41",
+  "schema_version": "seedrunner.prompt.v0",
+  "seed": {
+    "id": "intentional-fail",
+    "version": "1"
+  }
+}

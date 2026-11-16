@@ -1,0 +1,25 @@
+{
+  "evidence": {
+    "command": [
+      "python",
+      "-I",
+      "harness.py"
+    ],
+    "harness_result": {
+      "exception_type": "RuntimeError",
+      "message": "intentional verifier error",
+      "status": "ERROR",
+      "traceback": "Traceback (most recent call last):\n  File \"<temporary-workspace>/harness.py\", line 11, in <module>\n    runpy.run_path(\"verify_tests.py\", run_name=\"__main__\")\n    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"<frozen runpy>\", line 287, in run_path\n  File \"<frozen runpy>\", line 98, in _run_module_code\n  File \"<frozen runpy>\", line 88, in _run_code\n  File \"verify_tests.py\", line 1, in <module>\n    raise RuntimeError('intentional verifier error')\nRuntimeError: intentional verifier error\n"
+    },
+    "oracle": "python_tests",
+    "return_code": 0,
+    "sandboxed": false,
+    "security_boundary": "trusted local test code only; isolated subprocess and timeout are not a sandbox",
+    "stderr": "",
+    "stdout": "",
+    "timeout_seconds": 2.0
+  },
+  "evidence_id": "evidence_2f8ae466464b971ffd412691",
+  "oracle_type": "python_tests",
+  "schema_version": "seedrunner.evidence.v0"
+}

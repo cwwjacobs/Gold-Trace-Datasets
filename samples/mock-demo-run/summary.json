@@ -1,0 +1,48 @@
+{
+  "cost": {
+    "actual_usd": 0.0,
+    "estimated_usd": 0.0
+  },
+  "cost_guardrail": {
+    "blocked_count": 0,
+    "max_run_cost_usd": 12.0,
+    "stopped": false,
+    "submitted_count": 3
+  },
+  "record_count": 3,
+  "records": [
+    {
+      "record_id": "record_578ed6570b0b10031f5ac168",
+      "seed_id": "intentional-pass",
+      "status": "PASS",
+      "summary": "candidate exactly matched expected output",
+      "tier": "Silver"
+    },
+    {
+      "record_id": "record_7b60d2c4e69e95cd96d3b258",
+      "seed_id": "intentional-fail",
+      "status": "FAIL",
+      "summary": "candidate did not exactly match expected output",
+      "tier": "Silver"
+    },
+    {
+      "record_id": "record_28190117346fd4e085e80a3c",
+      "seed_id": "intentional-error",
+      "status": "ERROR",
+      "summary": "Python verifier could not establish PASS or FAIL",
+      "tier": "Bronze"
+    }
+  ],
+  "run_id": "mock-demo",
+  "schema_version": "seedrunner.summary.v0",
+  "status_counts": {
+    "ERROR": 1,
+    "FAIL": 1,
+    "PASS": 1
+  },
+  "tier_counts": {
+    "Bronze": 1,
+    "Gold": 0,
+    "Silver": 2
+  }
+}

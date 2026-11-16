@@ -1,0 +1,54 @@
+{
+  "cost": {
+    "actual_usd": 0.0,
+    "estimated_usd": 0.0
+  },
+  "cost_guardrail": {
+    "blocked_count": 0,
+    "max_run_cost_usd": 12.0,
+    "stopped": false,
+    "submitted_count": 3
+  },
+  "ended_at": "2026-08-15T12:00:00Z",
+  "generator": {
+    "deterministic": true,
+    "monetary_cost_usd": 0.0,
+    "network": false,
+    "provider": "mock"
+  },
+  "generator_health": {
+    "checked": false,
+    "provider": "mock",
+    "status": "PASS"
+  },
+  "inputs": {
+    "seed_count": 3,
+    "seed_snapshot_path": "inputs/seeds.jsonl",
+    "source_seed_path": "examples/seeds.jsonl"
+  },
+  "name": "SeedRunner",
+  "record_count": 3,
+  "run_id": "mock-demo",
+  "schema_version": "seedrunner.run.v0",
+  "spec_assurance": {
+    "implementation_rule": "Visible prompt requirements and the pinned AFR repository contract are enforced without silently inventing missing bundle content.",
+    "resolved": {
+      "afr_contract": {
+        "export_format": "afr.export.v1",
+        "repository": "cwwjacobs/agent-flight-recorder",
+        "revision": "f25037f3941e1c76b6725c0d7999106a270af231"
+      }
+    },
+    "status": "PARTIAL",
+    "unresolved": [
+      "The controlling prompt references separate seed schemas, examples, and a binding docs/PROTOTYPE_ACCEPTANCE_TESTS.md bundle that was not supplied or located."
+    ]
+  },
+  "started_at": "2026-08-15T12:00:00Z",
+  "state": "COMPLETED",
+  "status_counts": {
+    "ERROR": 1,
+    "FAIL": 1,
+    "PASS": 1
+  }
+}

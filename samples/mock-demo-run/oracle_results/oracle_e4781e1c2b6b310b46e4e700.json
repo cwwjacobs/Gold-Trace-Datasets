@@ -1,0 +1,10 @@
+{
+  "checks_completed": true,
+  "evidence_id": "evidence_c1597e4cb9b5efe0ab54dcbe",
+  "evidence_path": "evidence/evidence_c1597e4cb9b5efe0ab54dcbe.json",
+  "oracle_result_id": "oracle_e4781e1c2b6b310b46e4e700",
+  "oracle_type": "exact_match",
+  "schema_version": "seedrunner.oracle_result.v0",
+  "status": "FAIL",
+  "summary": "candidate did not exactly match expected output"
+}

@@ -1,0 +1,3 @@
+{"id":"intentional-pass","judge":{"note":"Low advisory score must not block oracle PASS.","score":0.01},"mock_response":"4","oracle":{"expected":"4","type":"exact_match"},"privacy_gate_passed":true,"prompt":"Return the numeral four.","version":"1"}
+{"id":"intentional-fail","judge":{"note":"High advisory score must not overwrite oracle FAIL.","score":1.0},"mock_response":"green","oracle":{"expected":"blue","type":"exact_match"},"privacy_gate_passed":true,"prompt":"Return blue.","version":"1"}
+{"id":"intentional-error","mock_response":"def add(a, b):\n    return a + b\n","oracle":{"test_code":"raise RuntimeError('intentional verifier error')\n","timeout_seconds":2,"type":"python_tests"},"privacy_gate_passed":true,"prompt":"Write a function named add.","version":"1"}

@@ -1,0 +1,118 @@
+{
+  "algorithm": "sha256",
+  "excluded_paths": [
+    "manifest.json",
+    "verification.json"
+  ],
+  "files": [
+    {
+      "path": "candidates/candidate_0494f3d99efebdb7013406cc.json",
+      "sha256": "5270dd02c7529d3757734035a702baa9fb4077a330955ca04c8e8fed5b97b8df",
+      "size_bytes": 226
+    },
+    {
+      "path": "candidates/candidate_9c16ae69ec319f0daa9c83ae.json",
+      "sha256": "6cabb308e7144f87884984fd7a402a7469da24ac0340eea527aec55318673dbd",
+      "size_bytes": 222
+    },
+    {
+      "path": "candidates/candidate_e79fd9869cf8fe036cb0d74b.json",
+      "sha256": "ce77e04ee9b156b9609a8bba1c0810b7eb3a39ea4ed3e9be8feddc4fcd1713d0",
+      "size_bytes": 255
+    },
+    {
+      "path": "evidence/evidence_2f8ae466464b971ffd412691.json",
+      "sha256": "35fa39e6e1894d53b3eee2ae1621b0747c90ae65d689c6788257cd96f5bf8bf9",
+      "size_bytes": 1169
+    },
+    {
+      "path": "evidence/evidence_a149cb5b6d8662f7d972abe8.json",
+      "sha256": "77019bcfa056bd0dc2cfcf9eb80097fef4acc38420d5b9d7103d05c3358c8dad",
+      "size_bytes": 328
+    },
+    {
+      "path": "evidence/evidence_c1597e4cb9b5efe0ab54dcbe.json",
+      "sha256": "d6f41f0349d34e5fad63c7e88e3745b88e5e028c648c5e5eeab238ed2ba25289",
+      "size_bytes": 336
+    },
+    {
+      "path": "inputs/seeds.jsonl",
+      "sha256": "565612373e010682324d31a85c7c4d5c1ad53a33d2f672591ff8f54c4554197b",
+      "size_bytes": 775
+    },
+    {
+      "path": "oracle_results/oracle_e4781e1c2b6b310b46e4e700.json",
+      "sha256": "3457e12de80f703184ad95b513d3afcfc6fbcfff9c437be001c3f68630908fd8",
+      "size_bytes": 379
+    },
+    {
+      "path": "oracle_results/oracle_ecb6740bd31620e9136d7719.json",
+      "sha256": "c1eb627d51002a1c233a9c602a9f0cce151f563587362613d984044439c7a6b7",
+      "size_bytes": 373
+    },
+    {
+      "path": "oracle_results/oracle_ffed7ae1be98f75535ceb2d3.json",
+      "sha256": "249b97b882b4e2a5e559ccec0d133dcd18d4d8321f9118e51585e0fa7e23e9a2",
+      "size_bytes": 383
+    },
+    {
+      "path": "prompts/prompt_142103611ba96c3a3b513337.json",
+      "sha256": "bed231b691090c5979f71996d8ea33eecaf3acd8609a0e5acc083fcc0225e308",
+      "size_bytes": 207
+    },
+    {
+      "path": "prompts/prompt_bd09e57d73365fd619607e41.json",
+      "sha256": "7b263c756c476ae8615159cca2f76d19e7e9a45173ed9f5c457ad17939b1c615",
+      "size_bytes": 191
+    },
+    {
+      "path": "prompts/prompt_cf9ece8c625a9e302311b722.json",
+      "sha256": "afe77fa78576b65fb922b9e8284600f743bba248849373ca0006ce9d848917ad",
+      "size_bytes": 203
+    },
+    {
+      "path": "raw_responses/raw_62adae73df07d8879d0ee8c9.json",
+      "sha256": "43e92062c2a5a05ef5e30c74b90c3bbdb1e4b51afa55c9b9dc50665491bc05d0",
+      "size_bytes": 875
+    },
+    {
+      "path": "raw_responses/raw_9767ed3a091fe22ec8c0345b.json",
+      "sha256": "d41fd4d4c29dd0686a449e5a98b26f7258b4a9add53fd4ee13c9e9ace90a57d8",
+      "size_bytes": 842
+    },
+    {
+      "path": "raw_responses/raw_d3abf500842a834ab15dd669.json",
+      "sha256": "d6dfcea6deb99ff2901b98447877f9bf25d7eb2879e9e23df1a322ba6a2bbccc",
+      "size_bytes": 846
+    },
+    {
+      "path": "receipt.json",
+      "sha256": "74aff6af190809f2344238843af0acfbf38af51ccc401a06ec7e190fbc8ab7cd",
+      "size_bytes": 12518
+    },
+    {
+      "path": "records.jsonl",
+      "sha256": "d6c0e168cb94528166f2c240ec4cc0f94fb1998c3cff2051b8a7ea9bfd7a42b7",
+      "size_bytes": 4963
+    },
+    {
+      "path": "report.html",
+      "sha256": "a2cc2077db7d0051231b6e9d3c70fcd3c2388b18a378cbb7e3d25427be7d5137",
+      "size_bytes": 2689
+    },
+    {
+      "path": "run.json",
+      "sha256": "9d7db6735117dd101a8e970d806fe6db31bfe126128253a4b314c98785b568aa",
+      "size_bytes": 1458
+    },
+    {
+      "path": "summary.json",
+      "sha256": "e4350d44ee41236c838653205e948dcd7c082439c893868e35157583fd374918",
+      "size_bytes": 1103
+    }
+  ],
+  "generated_at": "2026-08-15T12:00:00Z",
+  "root_hash": "0f0bfcbbd06b36b4ca5a4e7efe119ebb1eebf7e68598ec2bc4e992fb6c45622f",
+  "run_id": "mock-demo",
+  "schema_version": "seedrunner.manifest.v0"
+}

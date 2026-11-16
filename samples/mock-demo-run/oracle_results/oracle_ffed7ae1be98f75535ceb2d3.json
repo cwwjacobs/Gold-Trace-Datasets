@@ -1,0 +1,10 @@
+{
+  "checks_completed": false,
+  "evidence_id": "evidence_2f8ae466464b971ffd412691",
+  "evidence_path": "evidence/evidence_2f8ae466464b971ffd412691.json",
+  "oracle_result_id": "oracle_ffed7ae1be98f75535ceb2d3",
+  "oracle_type": "python_tests",
+  "schema_version": "seedrunner.oracle_result.v0",
+  "status": "ERROR",
+  "summary": "Python verifier could not establish PASS or FAIL"
+}

@@ -1,0 +1,38 @@
+{
+  "actual_cost_usd": 0.0,
+  "error": null,
+  "estimated_cost_usd": 0.0,
+  "latency_ms": 0.0,
+  "preflight_estimated_cost_usd": 0.0,
+  "raw_response_id": "raw_d3abf500842a834ab15dd669",
+  "request_metadata": {
+    "parameters": {},
+    "prompt_sha_id": "prompt_130e5bd55a5c9fb1dd89458c",
+    "provider": "mock"
+  },
+  "response": {
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "content": "green",
+          "role": "assistant"
+        }
+      }
+    ],
+    "id": "mockresp_6c17abf27ef3228c7e8c921d",
+    "object": "seedrunner.mock.response",
+    "provider": "mock",
+    "usage": {
+      "completion_tokens": 0,
+      "prompt_tokens": 0,
+      "total_tokens": 0
+    }
+  },
+  "schema_version": "seedrunner.raw_response.v0",
+  "usage": {
+    "completion_tokens": 0,
+    "prompt_tokens": 0,
+    "total_tokens": 0
+  }
+}

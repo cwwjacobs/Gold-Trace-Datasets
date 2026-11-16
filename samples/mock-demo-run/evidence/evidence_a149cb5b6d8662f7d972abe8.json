@@ -1,0 +1,15 @@
+{
+  "evidence": {
+    "expected": "4",
+    "matched": true,
+    "normalization": {
+      "case_sensitive": true,
+      "strip": false
+    },
+    "observed": "4",
+    "oracle": "exact_match"
+  },
+  "evidence_id": "evidence_a149cb5b6d8662f7d972abe8",
+  "oracle_type": "exact_match",
+  "schema_version": "seedrunner.evidence.v0"
+}
